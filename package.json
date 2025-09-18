@@ -1,18 +1,18 @@
 {
-  "name": "tsdown-starter",
-  "version": "0.0.0",
-  "description": "A starter for creating a TypeScript package.",
+  "name": "app-caller",
+  "version": "0.1.0",
+  "description": "A universal app caller for web.",
   "type": "module",
   "license": "MIT",
-  "homepage": "https://github.com/author/library#readme",
+  "homepage": "https://github.com/zaeyee/app-caller#readme",
   "bugs": {
-    "url": "https://github.com/author/library/issues"
+    "url": "https://github.com/zaeyee/app-caller/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/author/library.git"
+    "url": "git+https://github.com/zaeyee/app-caller.git"
   },
-  "author": "Author Name <author.name@mail.com>",
+  "author": "zaeyee <zaeyee@163.com>",
   "files": [
     "dist"
   ],
@@ -29,15 +29,16 @@
   "scripts": {
     "build": "tsdown",
     "dev": "tsdown --watch",
+    "demo:dev": "pnpm -C demo dev",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "release": "bumpp && npm publish"
   },
   "devDependencies": {
-    "@types/node": "^22.15.17",
-    "bumpp": "^10.1.0",
-    "tsdown": "^0.11.9",
-    "typescript": "^5.8.3",
-    "vitest": "^3.1.3"
+    "@types/node": "^24.5.2",
+    "bumpp": "^10.2.3",
+    "tsdown": "^0.15.2",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
   }
 }
